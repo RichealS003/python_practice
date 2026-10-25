@@ -131,7 +131,7 @@ if bill > 10000:
 else:
     print("Bill within limit")
 
-"""
+
 
 number1 = int(input('Enter a number: '))
 number2 = int(input("Enter another number: "))
@@ -140,6 +140,64 @@ difference = number1 - number2
 product = number1 * number2
 if number2 != 0:
     division = number1 / number2
+    print(f"Division: {division}")
 else:
     print("Cannot divide by zero.")
-print(f"Addition: {total}. Subtraction: {difference}. Multiplication: {product}. Division: {division}.")
+print(f"Addition: {total}. Subtraction: {difference}. Multiplication: {product}.")
+
+
+
+# number1 = int(input("Enter a number: "))
+# number2 = int(input("Enter a second number: "))
+# number3 = int(input("Enter a third number: "))
+
+
+children_ticket = 2000
+teenager_ticket = 3500
+adult_ticket = 5000
+age = int(input("Enter your age: "))
+if age < 13:
+    print(f"Your ticket price is {children_ticket}.")
+elif age <= 19:
+    print(f"Your ticket price is {teenager_ticket}.")
+else:
+    print(f"Your ticket price is {adult_ticket}.")
+
+
+
+score = int(input("Enter your score: "))
+if score != 0 and score <= 100:
+    if score >= 80: # 80 and above up to 100
+        print("A")
+    elif score >= 70: #70 and above but stops at 79 because the previous conditional requires the number be 80 or above
+        print("B")
+    elif score >= 60: #60 and above but stops at 69 because the previous conditional requires the number be 70 or above
+        print("C")
+    elif score >= 50: #Same idea for this and the others
+        print("D")
+    else:
+        print("F")
+else:
+    print("Number should be greater than 0 and less than or equal to 100.")
+
+
+
+user_password = input("Enter a password: ")
+if user_password == "python123":
+    print("Access Granted")
+else:
+    print("Access Denied")
+
+
+
+fees_per_term = 150000
+outstanding = int(input("Enter how many terms' fees you need to pay for: "))
+paid = int(input("Enter how many terms' fees you've paid: ")) #This variable unused. It'd have been useful if there was like total terms and then I'd have subtracted the outstanding from it, but as it stands there's no use for it.
+balance = outstanding * fees_per_term
+print(f"Your balance is {balance}.")
+if balance == 0:
+    print("Fully paid")
+else:
+    print("Payment outstanding")
+
+"""
