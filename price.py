@@ -147,9 +147,7 @@ print(f"Addition: {total}. Subtraction: {difference}. Multiplication: {product}.
 
 
 
-# number1 = int(input("Enter a number: "))
-# number2 = int(input("Enter a second number: "))
-# number3 = int(input("Enter a third number: "))
+
 
 
 children_ticket = 2000
@@ -166,7 +164,7 @@ else:
 
 
 score = int(input("Enter your score: "))
-if score != 0 and score <= 100:
+if score >= 0 and score <= 100:
     if score >= 80: # 80 and above up to 100
         print("A")
     elif score >= 70: #70 and above but stops at 79 because the previous conditional requires the number be 80 or above
@@ -200,4 +198,39 @@ if balance == 0:
 else:
     print("Payment outstanding")
 
+
+
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter a second number: "))
+number3 = int(input("Enter a third number: "))
+if number1 >= number2 and number1 >= number3:
+    print(f"Number 1({number1}) is greater.") #It check if the number1 is greater than or equal to the other two numbers. If it is greater then it means that it is greater and if it is equal to then it means that they're both bigger.
+elif number2 >= number1 and number2 >= number3:
+    print(f"Number 2({number2}) is greater.")
+else:
+    print(f"Number 3({number3}) is greater.")
+
 """
+
+number1 = int(input("Enter a number: "))
+number2 = int(input("Enter a second number: "))
+number3 = int(input("Enter a third number: "))
+if number1 >= number2 and number1 >= number3:
+    print(f"Number 1({number1}) is greater.") #It check if the number1 is greater than or equal to the other two numbers. If it is greater then it means that it is greater and if it is equal to then it means that they're both bigger.
+elif number2 >= number1 and number2 >= number3:
+    print(f"Number 2({number2}) is greater.")
+else:
+    print(f"Number 3({number3}) is greater.")
+
+    
+
+score1 = int(input("Enter a number: "))
+score2 = int(input("Enter a second number: "))
+score3 = int(input("Enter a third number: "))
+if score1 <= score2 and score1 <= score3:
+    print(f"Score 1({score1}) is the lowest score.") 
+elif score2 <= score1 and score2 <= score3:
+    print(f"Score 2({score2}) is the lowest score.")
+else:
+    print(f"Score 3({score3}) is the lowest score.")
+
